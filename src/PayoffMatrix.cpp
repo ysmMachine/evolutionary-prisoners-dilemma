@@ -1,4 +1,4 @@
-﻿#include "PayoffMatrix.hpp"
+#include "PayoffMatrix.hpp"
 
 #include <string>
 

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "PayoffMatrix.hpp"
 #include "Player.hpp"

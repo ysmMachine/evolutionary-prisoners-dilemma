@@ -1,4 +1,4 @@
-﻿#include "CsvWriter.hpp"
+#include "CsvWriter.hpp"
 #include "Game.hpp"
 #include "PayoffMatrix.hpp"
 #include "Strategy.hpp"

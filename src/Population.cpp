@@ -1,4 +1,4 @@
-﻿#include "Population.hpp"
+#include "Population.hpp"
 
 #include <algorithm>
 #include <numeric>

@@ -1,4 +1,4 @@
-﻿#include "CsvWriter.hpp"
+#include "CsvWriter.hpp"
 
 #include <iomanip>
 #include <stdexcept>
