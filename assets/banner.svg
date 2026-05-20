@@ -1,77 +1,70 @@
 <svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Evolutionary Prisoner's Dilemma Simulator</title>
-  <desc id="desc">A clean banner with a payoff matrix and a simple strategy evolution chart.</desc>
+  <desc id="desc">A clean three-column banner showing the project title, payoff matrix, and strategy evolution chart.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#14342f"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#12312f"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#030712" flood-opacity="0.28"/>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.25"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#background)"/>
 
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="80" y="112" font-size="52" font-weight="760" fill="#f8fafc">Evo PD</text>
-    <text x="82" y="158" font-size="25" font-weight="650" fill="#a7f3d0">Cooperate or defect?</text>
-    <text x="82" y="198" font-size="18" fill="#cbd5e1">A C++ simulation of strategy</text>
-    <text x="82" y="224" font-size="18" fill="#cbd5e1">selection across generations</text>
-    <rect x="82" y="258" width="120" height="36" rx="6" fill="#22c55e"/>
-    <text x="142" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#052e16">C++17</text>
+    <rect x="48" y="48" width="336" height="264" rx="12" fill="#f8fafc" filter="url(#cardShadow)"/>
+    <text x="88" y="126" font-size="42" font-weight="760" fill="#0f172a">Evolutionary</text>
+    <text x="88" y="176" font-size="42" font-weight="760" fill="#0f172a">PD</text>
+    <text x="88" y="224" font-size="20" font-weight="650" fill="#166534">C++ Strategy Simulator</text>
+    <text x="88" y="258" font-size="16" fill="#475569">cooperation · defection · selection</text>
   </g>
 
-  <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
-    <rect x="408" y="58" width="300" height="244" rx="10" fill="#f8fafc"/>
-    <text x="558" y="93" text-anchor="middle" font-size="21" font-weight="750" fill="#0f172a">Payoff Matrix</text>
-    <text x="558" y="121" text-anchor="middle" font-size="13" fill="#64748b">you, opponent</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="432" y="48" width="300" height="264" rx="12" fill="#f8fafc" filter="url(#cardShadow)"/>
+    <text x="582" y="92" text-anchor="middle" font-size="22" font-weight="750" fill="#0f172a">Payoff Matrix</text>
 
-    <line x1="470" y1="142" x2="670" y2="142" stroke="#94a3b8" stroke-width="2"/>
-    <line x1="470" y1="142" x2="470" y2="268" stroke="#94a3b8" stroke-width="2"/>
-    <line x1="570" y1="142" x2="570" y2="268" stroke="#94a3b8" stroke-width="2"/>
-    <line x1="670" y1="142" x2="670" y2="268" stroke="#94a3b8" stroke-width="2"/>
-    <line x1="470" y1="205" x2="670" y2="205" stroke="#94a3b8" stroke-width="2"/>
-    <line x1="470" y1="268" x2="670" y2="268" stroke="#94a3b8" stroke-width="2"/>
+    <text x="535" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#475569">Opponent C</text>
+    <text x="635" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#475569">Opponent D</text>
+    <text x="470" y="172" text-anchor="middle" font-size="15" font-weight="700" fill="#475569">You C</text>
+    <text x="470" y="242" text-anchor="middle" font-size="15" font-weight="700" fill="#475569">You D</text>
 
-    <text x="520" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#334155">C</text>
-    <text x="620" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#334155">D</text>
-    <text x="450" y="181" text-anchor="middle" font-size="16" font-weight="700" fill="#334155">C</text>
-    <text x="450" y="244" text-anchor="middle" font-size="16" font-weight="700" fill="#334155">D</text>
+    <rect x="495" y="145" width="80" height="54" rx="7" fill="#dcfce7"/>
+    <rect x="595" y="145" width="80" height="54" rx="7" fill="#fee2e2"/>
+    <rect x="495" y="215" width="80" height="54" rx="7" fill="#ffedd5"/>
+    <rect x="595" y="215" width="80" height="54" rx="7" fill="#e2e8f0"/>
 
-    <rect x="478" y="150" width="84" height="47" rx="6" fill="#dcfce7"/>
-    <rect x="578" y="150" width="84" height="47" rx="6" fill="#fee2e2"/>
-    <rect x="478" y="213" width="84" height="47" rx="6" fill="#ffedd5"/>
-    <rect x="578" y="213" width="84" height="47" rx="6" fill="#e2e8f0"/>
-
-    <text x="520" y="181" text-anchor="middle" font-size="22" font-weight="750" fill="#15803d">3,3</text>
-    <text x="620" y="181" text-anchor="middle" font-size="22" font-weight="750" fill="#dc2626">0,5</text>
-    <text x="520" y="244" text-anchor="middle" font-size="22" font-weight="750" fill="#ea580c">5,0</text>
-    <text x="620" y="244" text-anchor="middle" font-size="22" font-weight="750" fill="#475569">1,1</text>
+    <text x="535" y="180" text-anchor="middle" font-size="22" font-weight="760" fill="#15803d">3,3</text>
+    <text x="635" y="180" text-anchor="middle" font-size="22" font-weight="760" fill="#dc2626">0,5</text>
+    <text x="535" y="250" text-anchor="middle" font-size="22" font-weight="760" fill="#ea580c">5,0</text>
+    <text x="635" y="250" text-anchor="middle" font-size="22" font-weight="760" fill="#475569">1,1</text>
   </g>
 
-  <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
-    <rect x="770" y="58" width="350" height="244" rx="10" fill="#f8fafc"/>
-    <text x="945" y="93" text-anchor="middle" font-size="21" font-weight="750" fill="#0f172a">Strategy Evolution</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="780" y="48" width="372" height="264" rx="12" fill="#f8fafc" filter="url(#cardShadow)"/>
+    <text x="966" y="92" text-anchor="middle" font-size="22" font-weight="750" fill="#0f172a">Strategy Share</text>
 
-    <line x1="825" y1="245" x2="1045" y2="245" stroke="#64748b" stroke-width="2"/>
-    <line x1="825" y1="126" x2="825" y2="245" stroke="#64748b" stroke-width="2"/>
-    <text x="825" y="268" text-anchor="middle" font-size="12" fill="#64748b">0</text>
-    <text x="1045" y="268" text-anchor="middle" font-size="12" fill="#64748b">100</text>
+    <line x1="840" y1="238" x2="1092" y2="238" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="840" y1="122" x2="840" y2="238" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="840" y1="180" x2="1092" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="903" y1="122" x2="903" y2="238" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="966" y1="122" x2="966" y2="238" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="1029" y1="122" x2="1029" y2="238" stroke="#e2e8f0" stroke-width="1"/>
 
-    <polyline points="825,218 870,202 915,172 960,143 1005,126 1045,118" fill="none" stroke="#16a34a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <polyline points="825,145 870,157 915,181 960,207 1005,225 1045,235" fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <polyline points="825,196 870,184 915,190 960,173 1005,168 1045,154" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="840,218 903,200 966,169 1029,142 1092,126" fill="none" stroke="#16a34a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="840,145 903,159 966,187 1029,215 1092,228" fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="840,196 903,184 966,191 1029,174 1092,158" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <circle cx="1045" cy="118" r="5" fill="#16a34a"/>
-    <circle cx="1045" cy="235" r="5" fill="#dc2626"/>
-    <circle cx="1045" cy="154" r="5" fill="#2563eb"/>
+    <text x="840" y="260" text-anchor="middle" font-size="12" fill="#64748b">0</text>
+    <text x="1092" y="260" text-anchor="middle" font-size="12" fill="#64748b">100</text>
 
-    <rect x="842" y="112" width="76" height="26" rx="5" fill="#dcfce7"/>
-    <text x="880" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">TitForTat</text>
-    <rect x="842" y="145" width="76" height="26" rx="5" fill="#dbeafe"/>
-    <text x="880" y="163" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">Pavlov</text>
-    <rect x="842" y="178" width="76" height="26" rx="5" fill="#fee2e2"/>
-    <text x="880" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Defect</text>
+    <circle cx="860" cy="286" r="5" fill="#16a34a"/>
+    <text x="874" y="291" font-size="13" font-weight="650" fill="#334155">TitForTat</text>
+    <circle cx="948" cy="286" r="5" fill="#2563eb"/>
+    <text x="962" y="291" font-size="13" font-weight="650" fill="#334155">Pavlov</text>
+    <circle cx="1025" cy="286" r="5" fill="#dc2626"/>
+    <text x="1039" y="291" font-size="13" font-weight="650" fill="#334155">Defect</text>
   </g>
 </svg>
