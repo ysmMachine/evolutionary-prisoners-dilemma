@@ -72,15 +72,14 @@
   </g>
 
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="872" y="100" font-size="36" font-weight="750" fill="#f7fbf6">Evolutionary</text>
-    <text x="872" y="144" font-size="36" font-weight="750" fill="#f7fbf6">Prisoner's Dilemma</text>
-    <text x="874" y="184" font-size="18" fill="#cceee4">C++ simulation of cooperation</text>
-    <text x="874" y="210" font-size="18" fill="#cceee4">defection, and strategy selection</text>
-    <rect x="874" y="238" width="76" height="34" rx="6" fill="#75d6b0"/>
-    <rect x="962" y="238" width="76" height="34" rx="6" fill="#e17055"/>
-    <rect x="1050" y="238" width="76" height="34" rx="6" fill="#8fb8ff"/>
-    <text x="912" y="261" text-anchor="middle" font-size="15" font-weight="700" fill="#10282c">TFT</text>
-    <text x="1000" y="261" text-anchor="middle" font-size="15" font-weight="700" fill="#10282c">DEF</text>
-    <text x="1088" y="261" text-anchor="middle" font-size="15" font-weight="700" fill="#10282c">PAV</text>
+    <text x="810" y="112" font-size="34" font-weight="750" fill="#f7fbf6">Evo PD Simulator</text>
+    <text x="812" y="154" font-size="19" fill="#cceee4">cooperation vs defection</text>
+    <text x="812" y="184" font-size="17" fill="#cceee4">strategy selection over generations</text>
+    <rect x="812" y="222" width="70" height="32" rx="6" fill="#75d6b0"/>
+    <rect x="894" y="222" width="70" height="32" rx="6" fill="#e17055"/>
+    <rect x="976" y="222" width="70" height="32" rx="6" fill="#8fb8ff"/>
+    <text x="847" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#10282c">TFT</text>
+    <text x="929" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#10282c">DEF</text>
+    <text x="1011" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#10282c">PAV</text>
   </g>
 </svg>
