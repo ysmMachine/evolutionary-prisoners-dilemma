@@ -1,0 +1,9 @@
+{
+  "population_size": 100,
+  "generations": 100,
+  "rounds_per_match": 100,
+  "mutation_rate": 0.02,
+  "seed": 42,
+  "output_csv": "results/history.csv",
+  "payoff_matrix_note": "C++ 기본 보상 행렬은 R=3, T=5, S=0, P=1입니다. 값을 바꾸려면 include/PayoffMatrix.hpp의 기본값 또는 SimulationConfig를 수정하세요."
+}

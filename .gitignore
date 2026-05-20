@@ -1,0 +1,15 @@
+build/
+build-*/
+.vs/
+.vscode/
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.pyc
+__pycache__/
+.pytest_cache/
+.streamlit/
+results/*.csv
+!results/.gitkeep
